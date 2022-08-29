@@ -20,9 +20,9 @@ describe("Clients Service Verification", () => {
             provider: "Clients Service",
             logLevel: "DEBUG",
             providerBaseUrl: URL,
-            // with docker: pactUrls: ["http://localhost:9292/pacts/provider/ClientsService/consumer/Frontend/latest"],
-            pactUrls: [path.resolve(process.cwd(), 
-                "__tests__/contract/pacts/frontend-clientsservice.json")],
+            pactUrls: ["http://localhost:9292/pacts/provider/ClientsService/consumer/Frontend/latest"],
+            //pactUrls: [path.resolve(process.cwd(), 
+            //  "__tests__/contract/pacts/frontend-clientsservice.json")],
             consumerVersionTags: ["dev"],
             providerVersionTags: ["dev"],
             publishVerificationResult: false, // true if you have broker
