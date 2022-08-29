@@ -3,6 +3,8 @@
 const { Matchers } = require("@pact-foundation/pact")
 const { getClients, postClient } = require("../../../src/consumer")
 
+jest.setTimeout(30000)
+
 
 describe("Clients Service", () => {
     const GET_EXPECTED_BODY = [{
