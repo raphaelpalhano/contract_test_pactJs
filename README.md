@@ -114,3 +114,11 @@ Pense em um contrato como um acordo legalmente aplicável. Os contratos represen
 # Broker
 
 É onde os contratos são armazenados. Ele pode assumir a forma de qualquer servidor de ativos genérico, mas o suporte para controle de versão é ideal. Uma boa solução é usar o corretor Pact, que é adequado para essas necessidades exatas e é de código aberto. Dentro do Docker, um agente de fábrica personalizado pode ser construído.
+
+
+
+# Flow
+
+Consumer estabelece o contrato --> arquivo json --> Publica o contrato no Broker (Docker/Ruby) --> Provider pega o contrato e valida a rota
+
+<img src="./flows/contract_flow.drawio.png" alt="contract flow">

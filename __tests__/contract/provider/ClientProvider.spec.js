@@ -25,8 +25,8 @@ describe("Clients Service Verification", () => {
             //  "__tests__/contract/pacts/frontend-clientsservice.json")],
             consumerVersionTags: ["dev"],
             providerVersionTags: ["dev"],
-            publishVerificationResult: false, // true if you have broker
-            providerVersion: "1.0.1",
+            publishVerificationResult: true, // true if you have broker
+            providerVersion: "1.0.2",
 
         }
 
